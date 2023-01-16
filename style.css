@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(BebasNeue-Regular.ttf) format(ttf);
+}
+
+body{
+    background: linear-gradient(180deg,#e66465, #9198e5);
+    height: 100vh;
+    font-family: Bebas Neue;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    top:10px;
+    font-size: 100px;
+    color:white;
+}
+
+.clock{
+    background-color: transparent;
+    width:350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    position: relative;
+    opacity: 80%;
+}
+
+/* Numbers */
+
+.clock .numbers div{
+    position: absolute;
+    font-size:27px;
+    font-weight: bold;
+    color:rgb(250, 250, 250);
+    opacity: 80%;
+}
+
+.clock .numbers #one{
+    top:12.5%;
+    left:69%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+.clock .numbers #two{
+    top:28%;
+    left:84.5%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+
+.clock .numbers #three{
+    top:50%;
+    right:18px;
+    transform: translateY(-50%);
+}
+
+.clock .numbers #four{
+    bottom:21%;
+    left:84.5%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+.clock .numbers #five{
+    bottom:5%;
+    left:68%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+.clock .numbers #six{
+    bottom:6px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.clock .numbers #seven{
+    bottom: 5%;
+    left:25%;
+    transform: translateY(-50%);
+}
+
+.clock .numbers #eight{
+    bottom: 19%;
+    left:11%;
+    transform: translateY(-50%);
+}
+
+.clock .numbers #nine{
+    top:50%;
+    left:18px;
+    transform: translateY(-50%);
+}
+
+.clock .numbers #ten{
+    top:28%;
+    right:83%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+.clock .numbers #eleven{
+    top:12.5%;
+    right:69%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+.clock .numbers #twelve{
+    top:6px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+/* Arrows */
+
+.arrows::before{
+    content:"";
+    background-color: white;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index:4;
+}
+
+.arrows{
+    display:flex;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows div{
+    background-color: white;
+    width:7px;
+    height: 120px;
+    transform-origin: bottom center;
+    bottom:50%;
+    position: absolute;
+    z-index:3; 
+    border-radius:50% 50% 0 0;
+}
+
+.arrows #hour{
+    height:80px;
+    background-color: white;
+}
+
+.arrows #minute{
+    background-color:lightblue;
+}
+
+.arrows #second{
+    background-color: rgb(44, 156, 194);
+}
+
+/* ClockNumbers */
+
+.clocknumbers{
+    position: relative;
+    background-color: white;
+    height:50px;
+    width:200px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom:50px;
+}
+
+.clocknumbers div{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+}
+
+.clocknumbers p{
+    font-size: 40px;
+}
